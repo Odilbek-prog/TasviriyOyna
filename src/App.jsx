@@ -1,0 +1,25 @@
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import News from "./pages/News";
+import Portfolio from "./pages/Portfolio";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+function App() {
+  return (
+    <div className="layout">
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<News />} />
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<Portfolio />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
