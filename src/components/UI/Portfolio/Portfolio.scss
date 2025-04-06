@@ -1,0 +1,39 @@
+.portfolio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-top: 100px;
+  &__linkdiv {
+    display: flex;
+    gap: 10px;
+  }
+  &__link {
+    color: #e4ef15;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  &__text {
+    width: 700px;
+    text-align: center;
+  }
+  &__cards {
+    width: 1400px;
+    height: 390px;
+    --swiper-pagination-bullet-inactive-color: #ccc;
+  }
+  &__card {
+    width: 30% !important;
+  }
+}

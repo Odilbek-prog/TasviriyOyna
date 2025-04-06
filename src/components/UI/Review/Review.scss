@@ -1,0 +1,65 @@
+.review {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  &__wrapper {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  &__text {
+    width: 550px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__linkdiv {
+    display: flex;
+    gap: 10px;
+  }
+  &__link {
+    color: #e4ef15;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__cards {
+    width: 1300px;
+  }
+  &__card {
+    display: flex;
+    background-color: #2e90fa;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 50px;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__img {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  &__cardtext {
+    font-size: 32px;
+  }
+  &__div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 20px;
+  }
+}

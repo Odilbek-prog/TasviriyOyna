@@ -25,8 +25,8 @@
   &__btn {
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
     border: 0;
-    color: #fff;
     align-items: center;
     padding: 12px 18px;
     gap: 6px;

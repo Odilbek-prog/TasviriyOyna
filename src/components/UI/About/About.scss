@@ -1,0 +1,131 @@
+.about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  &__wrapper {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  &__linkdiv {
+    display: flex;
+    gap: 10px;
+  }
+  &__link {
+    color: #e4ef15;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__desc {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  &__text {
+    width: 600px;
+  }
+  &__middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+    display: flex;
+    gap: 10px;
+  }
+  &__avatar {
+    height: 50px;
+  }
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+  &__who {
+    color: rgb(180, 180, 180);
+  }
+  &__right {
+    width: 500px;
+  }
+  &__subtitlegray {
+    color: #98a2b3;
+  }
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  &__card1 {
+    width: 270px;
+    height: 270px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    border: 1px solid #344054;
+  }
+  &__card2 {
+    width: 580px;
+    height: 270px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    border: 1px solid #344054;
+  }
+  &__card3 {
+    width: 270px;
+    height: 270px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    border: 1px solid #344054;
+  }
+  &__card4 {
+    width: 45.5%;
+    height: 270px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    border: 1px solid #344054;
+  }
+  &__card5 {
+    width: 45.5%;
+    height: 270px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1e1e1e;
+    border: 1px solid #344054;
+  }
+  &__carddesc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__order,
+  &__cardtext {
+    color: #98a2b3;
+  }
+}

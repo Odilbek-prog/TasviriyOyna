@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "SuisseIntl-Regular";
+  font-family: "SuisseIntl-Regular" !important;
 }
 li {
   list-style: none;
