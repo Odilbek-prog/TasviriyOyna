@@ -1,0 +1,67 @@
+.team {
+  width: 100%;
+  background-color: #000; /* Qora fon */
+  font-family: "Arial", sans-serif;
+  margin-top: 100px;
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__linkdiv {
+    display: flex;
+    gap: 10px;
+  }
+  &__link {
+    color: #e4ef15;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__text {
+    width: 700px;
+    text-align: center;
+  }
+
+  &__wrapper {
+    width: 1300px;
+    margin: 0 auto; /* Wrapperni markazlashtirish */
+
+    .team__members {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 ta ustunli grid */
+      gap: 30px; /* A'zolar orasidagi bo‘shliq */
+    }
+
+    .team__member {
+      padding: 20px;
+      text-align: center;
+
+      img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%; /* Doira shaklidagi rasmlar */
+        margin-bottom: 15px;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff; /* Oq rangdagi ismlar */
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #fff; /* Oq rangdagi lavozimlar */
+      }
+    }
+  }
+}

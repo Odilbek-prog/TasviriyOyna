@@ -1,0 +1,124 @@
+.contact {
+  width: 100%;
+  background-color: #000;
+  margin-top: 80px; /* Qora fon */
+  &__linkdiv {
+    display: flex;
+    gap: 10px;
+  }
+  &__link {
+    color: #e4ef15;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__text {
+    width: 700px;
+    text-align: center;
+  }
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__wrapper {
+    width: 1000px;
+    margin: 0 auto; /* Markazga joylashadi */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ichidagi elementlar markazda */
+
+    .contact__form {
+      width: 480px;
+      display: flex;
+      flex-direction: column;
+      .contact__privacy {
+        width: 448px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      input[type="checkbox"] {
+        padding: 0 !important;
+        appearance: none; /* Default checkbox ko‘rinishini olib tashlaymiz */
+        width: 20px;
+        height: 20px;
+        background-color: #222; /* Quyq kulrang fon */
+        border: 1px solid #555; /* Engil kulrang chegara */
+        border-radius: 4px; /* Yumaloq burchaklar */
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 20px;
+
+        // Checkbox belgilanganda
+        &:checked {
+          background-color: blue; /* Ko‘k fon */
+          border-color: blue;
+
+          // Belgilash uchun "✔" belgisi qo‘shamiz
+          &::after {
+            content: "✔";
+            color: white; /* Oq rangda belgi */
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        // Hover holatida
+        &:hover:not(:checked) {
+          border-color: #888; /* Chegara rangi o‘zgaradi */
+        }
+
+        // Focus holatida
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.3); /* Ko‘k fokus halqasi */
+        }
+      }
+
+      input,
+      textarea {
+        padding: 13px 17px !important;
+        box-shadow: 0px 1px 2px rgba(10, 13, 18, 0.05);
+        border-radius: 8px;
+        background-color: #191a18; /* Maydonlar uchun quyuq kulrang fon */
+        color: #fff; /* Matn oq rangda */
+        border: 0; /* Engil kulrang chegara */
+        padding: 10px; /* Ichki masofa */
+        resize: none;
+        outline: none;
+        margin: 5px 0 20px 0;
+      }
+
+      textarea {
+        height: 100px; /* Tekst maydoni balandligi */
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 10px; /* Checkbox va label orasidagi masofa */
+      }
+
+      button {
+        background-color: #2e90fa; /* Ko‘k fon */
+        color: white; /* Oq matn */
+        border: none;
+        border-radius: 48px; /* Yumaloq burchaklar */
+        padding: 10px 20px; /* Katta ichki masofa */
+        cursor: pointer; /* Kursorni qo‘l shakliga o‘zgartiradi */
+        font-family: "Arial", sans-serif;
+      }
+    }
+  }
+}

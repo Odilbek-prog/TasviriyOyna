@@ -61,7 +61,23 @@ const Review = () => {
                 boriladi.
               </p>
               <div className="review__div">
-                {" "}
+                <hr />
+                <div>
+                  <h4>Isfandiyor latipov Xudoyorovich</h4>
+                  <p>Tasviriy oyina ijodiy uyishmasi Boshqaruvi raisi</p>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide className="review__card">
+            <img src={man} className="review__img" />
+            <div className="review__desc">
+              <p className="review__cardtext">
+                Dizaynerlik, rassomlik, adabiyot kabi san’atning turli
+                yo‘nalishlarida o‘z iste’dodimiz haqida ma'lumotlar yoritilib
+                boriladi.
+              </p>
+              <div className="review__div">
                 <hr />
                 <div>
                   <h4>Isfandiyor latipov Xudoyorovich</h4>

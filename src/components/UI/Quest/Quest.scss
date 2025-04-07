@@ -1,0 +1,32 @@
+.quest {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  padding: 50px 0;
+  background-color: #2e90fa;
+  &__wrapper {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 32px;
+  }
+  &__title:nth-child(2) {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+  }
+  &__btn {
+    box-sizing: border-box !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 347px;
+    height: 60px;
+    background: #101828;
+    border-radius: 50px;
+  }
+}
