@@ -1,0 +1,268 @@
+.layout {
+  background-color: black;
+  color: #fff;
+}
+.main {
+  min-height: 80vh;
+}
+.news {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  &__wrapper {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  &__text {
+    width: 600px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__yellow {
+    color: yellow;
+  }
+  &__form {
+    display: flex;
+    gap: 15px;
+  }
+  &__input {
+    border-radius: 40px;
+    border: 0;
+    background-color: #191a18;
+    padding: 14px;
+    width: 360px;
+  }
+  &__btn {
+    border-radius: 40px;
+    border: 0;
+    background-color: #1570ef;
+    padding: 16px;
+    color: #fff;
+  }
+}
+.news-card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .news-new {
+    color: #75e0a7;
+    background-color: #053321;
+    border: 1px solid #085d3a;
+    border-radius: 40px;
+    width: 150px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+
+  .news-content {
+    margin-top: 15px;
+    .news-date {
+      font-size: 12px;
+      color: rgba(255, 255, 0, 0.481);
+      margin-bottom: 5px;
+    }
+
+    .news-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .news-desc {
+      font-size: 14px;
+      color: #c4c4c4;
+      line-height: 1.5;
+    }
+  }
+}
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 ta ustun */
+  gap: 30px; /* Kartalar orasidagi masofa */
+  margin-bottom: 40px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+
+  .page-item {
+    margin: 0 5px;
+
+    a {
+      display: block;
+      padding: 10px 15px;
+      background-color: #282828;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 50%;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      font-family: "Arial", sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #787878;
+        transform: scale(1.05);
+      }
+    }
+
+    &.active a {
+      background-color: #007bff;
+      color: #fff;
+    }
+  }
+
+  // "Oldingi" va "Keyingi" tugmalari uchun stillar
+  li[class*="previous"],
+  li[class*="next"] {
+    margin-top: 10px;
+
+    a {
+      background-color: #007bff; /* Ko'k fon */
+      color: #fff; /* Oq matn */
+      font-weight: bold;
+      padding: 10px 20px; /* Biroz kengroq padding */
+      border-radius: 8px; /* Yumaloqroq burchaklar */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Soyali effekt */
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3; /* Hoverda quyuqroq ko'k */
+        transform: scale(1.1); /* Hoverda kattalashadi */
+      }
+    }
+
+    &.disabled a {
+      background-color: #ccc; /* Faol bo'lmaganda kulrang */
+      color: #666;
+      cursor: not-allowed;
+      box-shadow: none;
+
+      &:hover {
+        background-color: #ccc;
+        transform: none;
+      }
+    }
+  }
+}
+.aboutpage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  &__wrapper {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__text {
+    width: 466px;
+    text-align: center;
+  }
+  &__lasttext {
+    width: 550px;
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__cardtext,
+  &__cardtitle {
+    text-transform: uppercase;
+  }
+  &__card {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  &__cardtext {
+    width: 170px;
+    color: #a5a5a5;
+  }
+  &__yellow {
+    color: yellow;
+  }
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.portfoliopage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  &__wrapper {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 52px;
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 80px;
+  }
+  &__text {
+    width: 600px;
+    text-align: center;
+  }
+  &__yellow {
+    color: yellow;
+  }
+}

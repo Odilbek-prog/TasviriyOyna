@@ -7,7 +7,6 @@ import Review from "../components/UI/Review/Review";
 import Faq from "../components/UI/Faq/Faq";
 import Contact from "../components/UI/Contact/Contact";
 import Team from "../components/UI/Team/Team";
-import Quest from "../components/UI/Quest/Quest";
 
 const Home = () => {
   return (
@@ -20,7 +19,6 @@ const Home = () => {
       <Faq />
       <Contact />
       <Team />
-      <Quest />
     </div>
   );
 };
