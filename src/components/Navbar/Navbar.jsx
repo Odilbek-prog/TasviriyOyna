@@ -31,10 +31,10 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <NavLink to={"/#contact"} className="navbar__btn">
+        <a href="/#contact" className="navbar__btn">
           <img src={phone} className="navbar__icon" />
           Bog’lanish
-        </NavLink>
+        </a>
       </div>
     </div>
   );

@@ -84,11 +84,11 @@ const Team = () => {
           <div className="contact__linkdiv">
             <img src={flower} className="contact__flower" />
             <NavLink to={"/about"} className="contact__link">
-              Biz bilan aloqa
+              Professionallarga ishoning
               <img src={yellowarrow} className="contact__arrow" />
             </NavLink>
           </div>
-          <h1 className="contact__title">Biz bilan bog’lanish</h1>
+          <h1 className="contact__title">Bizning jamoamiz</h1>
           <p className="contact__text">
             Dizaynerlik, rassomlik, adabiyot kabi san’atning turli
             yo‘nalishlarida o‘z iste’dodimiz haqida ma'lumotlar yoritilib
